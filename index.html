@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sistem Rekomendasi Smartphone - SAW</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Sistem Rekomendasi Smartphone Terbaik (SAW)</h1>
+      <p>Pilih bobot setiap kriteria, kemudian klik <strong>Hitung</strong>.</p>
+    </header>
+
+    <section class="controls">
+      <h2>Bobot Kriteria (akan dinormalisasi otomatis)</h2>
+      <div class="weights">
+        <label>Performa (CPU): <input id="w_cpu" type="range" min="0" max="100" value="25"> <span id="v_cpu">25</span></label>
+        <label>Kamera: <input id="w_cam" type="range" min="0" max="100" value="20"> <span id="v_cam">20</span></label>
+        <label>Baterai: <input id="w_batt" type="range" min="0" max="100" value="20"> <span id="v_batt">20</span></label>
+        <label>Harga (cost): <input id="w_price" type="range" min="0" max="100" value="20"> <span id="v_price">20</span></label>
+        <label>Penyimpanan: <input id="w_storage" type="range" min="0" max="100" value="15"> <span id="v_storage">15</span></label>
+      </div>
+
+      <div class="actions">
+        <button id="compute">Hitung SAW</button>
+        <button id="reset">Reset Bobot</button>
+        <button id="download">Download CSV Hasil</button>
+      </div>
+    </section>
+
+    <section class="data">
+      <h2>Data Smartphone (contoh)</h2>
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>Nama</th><th>Performa</th><th>Kamera</th><th>Baterai (mAh)</th><th>Harga (Rp)</th><th>Penyimpanan (GB)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p class="note">Semua nilai contoh pada skala performa/kamera 1-10; baterai dalam mAh; harga sebagai cost (lebih rendah lebih baik); penyimpanan dalam GB.</p>
+    </section>
+
+    <section class="results">
+      <h2>Hasil Rangking</h2>
+      <table id="resultTable">
+        <thead>
+          <tr><th>Rank</th><th>Nama</th><th>Skor</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <footer>
+      <small>Made for assignment — SAW (Simple Additive Weighting) demo. You can edit data in <code>script.js</code>.</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
