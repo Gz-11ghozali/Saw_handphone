@@ -12,3 +12,9 @@ Cara pakai:
 Modifikasi:
 - Edit data contoh di `script.js` pada variabel `smartphones`.
 - Tambah/ubah kriteria sesuai kebutuhan (perlu menyesuaikan `criteria` pada `script.js`).
+
+<img width="1862" height="713" alt="image" src="https://github.com/user-attachments/assets/fbb2a1db-852c-4fb8-813f-f4e91a2bdc28" />
+
+<img width="1469" height="500" alt="image" src="https://github.com/user-attachments/assets/88c34562-f532-4048-ab6e-58421deebd44" />
+
+<img width="1391" height="450" alt="image" src="https://github.com/user-attachments/assets/9a5b86c7-d86c-4fad-844d-df1965dd6b5a" />
